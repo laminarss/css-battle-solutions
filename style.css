@@ -76,6 +76,7 @@ hr {
 }
 
 .footer a {
+   background-color: #def;
    color:rgb(1, 158, 132);
    text-decoration: none;
 }
