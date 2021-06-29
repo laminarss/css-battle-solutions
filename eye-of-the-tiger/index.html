@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Battle | Eye of the Tiger</title>
+</head>
+<body>
+  <div class="container">
+  <div class="outer-shape center">
+    <div class="ring-one center">
+      <div class="ring-two center">
+        <div class="ring-three center">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+<style>
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    margin: auto;
+    width: 400px;
+    height: 300px;
+    background: #0b2429;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .outer-shape {
+    position: relative;
+    left: 100px;
+    top: 50px;
+    width: 200px;
+    height: 200px;
+    background: #998235;
+    border-radius: 50% 0;
+    transform: rotate(45deg);
+  }
+
+  .ring-one {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #0b2429;
+  }
+
+  .ring-two {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #fcac3c;
+  }
+
+  .ring-three {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #0b2429;
+  }
+</style>

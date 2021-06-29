@@ -1,0 +1,57 @@
+<div class="main">
+	<div class="piano">
+      <div id="one"></div>
+      <div id="two"></div>
+      <div></div>
+      <div id="four"></div>
+      <div id="five"></div>
+      <div id="six"></div>
+      <div></div>
+  	</div>
+</div>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .main {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    background: #998235;
+  }
+
+  .piano {
+    position: relative;
+    top: 100px;
+    left: 110px;
+    display: flex;
+    align-items: flex-end;
+    /* margin: 25vh 0; */
+    width: 180px;
+    height: 100px;
+    background: #191919;
+    border-radius: 10px;
+  }
+
+  .piano div {
+    margin: 5px 0 5px 5px;
+    border-radius: 5px;
+    background: #ffffff;
+    height:70px;
+    width: 20px;
+  }
+
+  #one::after, #two::after, #four::after, #five::after, #six::after {
+    position: absolute;
+    align-self: flex-start;
+    content: '';
+    margin-left: 15px;
+    width: 15px;
+    height: 35px;
+    background: #191919;
+  }
+
+</style>

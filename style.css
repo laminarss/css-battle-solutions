@@ -1,0 +1,120 @@
+* {
+   padding: 0;
+   margin: auto;
+   box-sizing: border-box;
+   font-family: 'Inter', sans-serif;
+}
+
+.container {
+   margin: auto;
+}
+
+p {
+   font-size: 1.6em;
+}
+
+hr {
+   height: 2em;
+}
+
+.header {
+   padding: 2em 0;
+   text-align: center;
+}
+
+.header h1 {
+   font-size: 2.5em;
+   margin-bottom: .85em;
+}
+
+.header p a:link, .header p a:active, .header p a:visited {
+   background-color: #def;
+   text-decoration: none;
+   color:rgb(1, 158, 132);
+}
+
+.header p a:hover {
+   text-decoration: underline;
+}
+
+.card-group {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   max-width: 75em;
+}
+
+.card {
+   padding: 2em;
+   margin: 1em;
+   width: 30em;
+   height: 30em;
+   background-color: #bbb;
+   border-radius: 1em;
+}
+
+.card:hover {
+   transform: scale(1.05);
+   transition: transform .2s ease-in-out;
+}
+
+.card:hover p {
+   text-decoration: underline;
+}
+
+.card p {
+   font-size: 1.5em;
+   text-align: center;
+   margin: 1.2em 0;
+}
+
+.footer {
+   padding: 2em 0;
+   margin-top: 1.5em;
+   text-align: center;
+}
+
+.footer a {
+   color:rgb(1, 158, 132);
+   text-decoration: none;
+}
+
+.footer a:hover {
+   text-decoration: underline;
+}
+
+@media only screen and (min-width: 325px) and (max-width: 550px) {
+
+   .card {
+      padding-top: .5em;
+      width: 90vw;
+      height: 80%;
+   }
+
+   .card img {
+      width: 95%;
+      margin-left: .5em;
+   }
+
+   p {
+      padding: 1vw;
+   }
+}
+
+@media only screen and (max-width: 325px) {
+
+   .container {
+      display: none;
+   }
+
+   body {
+      font-size: 1.8em;
+      margin: 35vh 5vw;
+      text-align: center;
+   }
+
+   body::after {
+      content: 'This website cannot be viewed on your device.';
+   }
+}
