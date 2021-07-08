@@ -1,2 +1,2 @@
 # leafy-trail
-Click [here](https://codepen.io/ln453/pen/mdmbxqL) to view the solution.
+Click [here](https://codepen.io/laminarss/pen/mdmbxqL) to view the solution.
